@@ -33,7 +33,7 @@ function getCounter(hour, minute, sec, winform) {
 function timer() {
  
     let timerText = document.getElementById('timer')  //переменная с текстом
-    let date = new Date(2020, 9, 5, 0, 1, 3)           // вносим новые данные
+    let date = new Date(2020, 9, 5, 0, 1, 59)           // вносим новые данные
     timerText.textContent = (`${date.getHours()}: ${date.getMinutes()}: ${date.getSeconds()}`)  //меняем данные в html
     let sumTimerArray = 0                          // переменная для проверки времени
     let timerArray = [date.getHours(), date.getMinutes(), date.getSeconds()]
