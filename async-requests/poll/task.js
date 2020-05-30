@@ -9,7 +9,7 @@ request.addEventListener('readystatechange', function () {
 
         let text = JSON.parse(this.responseText)
         pollTitle.insertAdjacentText("afterbegin", text.data.title)
-        for (let i = 0; i < text.data.answers.length - 1; i++) {
+        for (let i = 0; i < text.data.answers.length; i++) {
             string += `<button class='poll__answer'>${text.data.answers[i]}</btn>`
         }
         pollAnswers.insertAdjacentHTML("afterbegin", string)
